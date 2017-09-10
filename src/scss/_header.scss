@@ -1,0 +1,244 @@
+header{
+  margin-top: 63px;
+  height: 1100px;
+  justify-content: center;
+  display: flex;
+
+  section{
+    display: flex;
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+
+    &:after{
+      content: '';
+      display: flex;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 95vw;
+      border-bottom: solid 2px $sep-header-color;
+    }
+
+    .slider{
+      display: flex;
+      position: relative;
+      list-style: none;
+      width: 600%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      left: 0%;
+      // transform: translateX(0vw);
+      transition: all 2000ms; //cubic-bezier(0.68, -0.55, 0.265, 1.55) 10ms;
+
+      li{
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 100vw;
+        justify-content: center;
+      }
+    }
+    .slider-counter{
+      font-size: 0px;
+      bottom: 0;
+      left: 2%;
+      position: absolute;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+      li{
+        cursor: pointer;
+        display: inline-block;
+        height: 7px;
+        width: 7px;
+        margin-right: 4px;
+        background-color: $slider;
+        &:hover{
+          background-color: $slider-active;
+        }
+      }
+      .active{
+        background-color: $slider-active;
+      }
+
+    }
+  }
+  .header-container:hover li{
+      filter: grayscale(100%);
+  }
+  .header-container:hover li:hover{
+      filter: grayscale(0%);
+  }
+  .header-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ul{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      align-self: center;
+      justify-content: center;
+      display: flex;
+      height: 183px;
+      list-style: none;
+      margin-bottom: 50px;
+      margin-top: 50px;
+
+      &:nth-child(1){
+          &:before{
+            left: -25px;
+            position: absolute;
+            content: '';
+            display: block;
+            height: 100%;
+            background: #000;
+            border-left: solid 2px $sep-header-color;
+          }
+          &:after{
+            right: -25px;
+            position: absolute;
+            content: '';
+            display: block;
+            height: 100%;
+            background: #000;
+            border-left: solid 2px $sep-header-color;
+          }
+      }
+      &:nth-child(3){
+        &:before{
+          left: -25px;
+          position: absolute;
+          content: '';
+          display: block;
+          height: 100%;
+          background: #000;
+          border-left: solid 2px $sep-header-color;
+        }
+        &:after{
+          right: -25px;
+          position: absolute;
+          content: '';
+          display: block;
+          height: 100%;
+          background: #000;
+          border-left: solid 2px $sep-header-color;
+        }
+      }
+
+// HEXAGON THINGY
+
+      li{
+        align-self: center;
+        display: inline-block;
+        height: 348px;
+        width: 323px;
+        margin-left: 20px;
+        margin-right: 20px;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.slider-animation-prev{
+  animation: prevSlider 2.5s 1;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.slider-animation-next{
+  animation: nextSlider 2.5s 1;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.header-backgrounds1{
+  li{
+    &:nth-child(1){
+    background: url(../img/portfolio1.jpg);
+    @extend .thingybg;
+    animation-delay: 0.3s
+    }
+    &:nth-child(2){
+    background: url(../img/portfolio2.jpg);
+    @extend .thingybg;
+    animation-delay: 0.4s
+    }
+    &:nth-child(3){
+    background: url(../img/portfolio3.jpg);
+    @extend .thingybg;
+    animation-delay: 0.5s
+    }
+    &:nth-child(4){
+    background: url(../img/portfolio4.jpg);
+    @extend .thingybg;
+    animation-delay: 0.6s
+    }
+  }
+}
+.header-backgrounds2{
+  li{
+    &:nth-child(1){
+    background: url(../img/portfolio5.jpg);
+    @extend .thingybg;
+    }
+    &:nth-child(2){
+    background: url(../img/portfolio6.jpg);
+    @extend .thingybg;
+    animation-delay: 0.2s
+    }
+    &:nth-child(3){
+    background: url(../img/portfolio7.jpg);
+    @extend .thingybg;
+    animation-delay: 0.3s
+    }
+    &:nth-child(4){
+    background: url(../img/portfolio8.jpg);
+    @extend .thingybg;
+    animation-delay: 0.4s
+    }
+    &:nth-child(5){
+    background: url(../img/portfolio9.jpg);
+    @extend .thingybg;
+    animation-delay: 0.5s
+    }
+  }
+}
+.header-backgrounds3{
+  li{
+    &:nth-child(1){
+    background: url(../img/portfolio10.jpg);
+    @extend .thingybg;
+    animation-delay: 0.3s
+    }
+    &:nth-child(2){
+    background: url(../img/portfolio11.jpg);
+    @extend .thingybg;
+    animation-delay: 0.4s
+    }
+    &:nth-child(3){
+    background: url(../img/portfolio12.jpg);
+    @extend .thingybg;
+    animation-delay: 0.5s
+    }
+    &:nth-child(4){
+    background: url(../img/portfolio13.jpg);
+    @extend .thingybg;
+    animation-delay: 0.6s
+    }
+  }
+}
+.thingybg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

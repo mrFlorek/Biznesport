@@ -1,0 +1,43 @@
+@keyframes navslide {
+  0%{
+  }
+  100%{
+
+  }
+}
+@keyframes shake {
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(100px);
+  }
+  75%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes prevSlider {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes nextSlider {
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}

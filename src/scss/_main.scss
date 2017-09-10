@@ -1,0 +1,253 @@
+main{
+  .about{
+    display: flex;
+    justify-content: center;
+    background: $bg-about;
+    .about-cont{
+      display:flex;
+      justify-content: center;
+      align-self: center;
+      height: 90%;
+      border-left: 2px solid $sep-about-color;
+      border-right: 2px solid $sep-about-color;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .about-img{
+      display: flex;
+      justify-content: center;
+      // border-left: 2px solid $sep-about-color;
+      span{
+        width: 260px;
+        height: 280px;
+        align-self: center;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        background: url(../img/about.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .about-text{
+      width: 80%;
+      padding-left: 30px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      // border-right: 2px solid $sep-about-color;
+      font-family: MavenPro-Regular;
+      h1{
+        margin: 0;
+        padding: 0;
+        font-size: 34px;
+        font-weight: 100;
+        color: $text-about-header;
+      }
+      h3{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 100;
+        color: $text-about-header2;
+      }
+      p{
+        line-height: 1.6;
+        font-family: Lato-Regular;
+        color: $text-about-header;
+        text-align: justify;
+      }
+      ul{
+        align-self: flex-end;
+        font-size: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        li{
+          display: inline-block;
+          &:nth-child(1){
+            i{
+              background: #a4dbd4
+            }
+          }
+          &:nth-child(2){
+            i{
+              background: #6ccbbe;
+            }
+          }
+          &:nth-child(3){
+            i{
+              background: #7ed0c5;
+            }
+          }
+          &:nth-child(4){
+            i{
+              background: #abddd7;
+            }
+          }
+          &:nth-child(5){
+            i{
+              background: #acddd7;
+            }
+          }
+          &:nth-child(6){
+            i{
+              background: #6dcbbe;
+            }
+          }
+          i{
+            font-size: 16px;
+            padding: 4px;
+            color: $bg-about;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+              background: $text-about-header;
+            }
+          }
+        }
+      }
+    }
+  }
+  .getintouch{
+    font-family: Lato-Regular;
+    color: $text-first-color;
+    display:flex;
+    background: $bg-first-color;
+    justify-content: center;
+    flex-direction: column;
+
+    .container{
+      flex-direction: column;
+    }
+
+    .getintouch-cont{
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+      display: flex;
+      width: 95%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-top: solid 2px $sep-getintouch-color;
+      border-bottom: solid 2px $sep-getintouch-color;
+      h1{
+        margin: 0;
+        font-size: 34px;
+        font-weight: lighter;
+        font-family: MavenPro-Regular;
+      }
+      h3{
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: lighter;
+        font-size: 20px;
+        font-family: MavenPro-Regular;
+      }
+    }
+    .getintouch-form{
+      display: flex;
+      flex-direction: row;
+      form{
+        width: 95%;
+        margin: 5px;
+      }
+      input{
+        display: flex;
+        width: 100%;
+        border: none;
+        margin-bottom: 15px;
+        margin-left: -5px;
+        height: 40px;
+        padding-left: 10px;
+        background: $bg-contact-form;
+        color: $text-first-color;
+        font-size: 12px;
+        font-weight: bold;
+        &:focus{
+          outline: $bg-about auto 2px;
+        }
+      }
+      textarea{
+        display: flex;
+        width: 100%;
+        border: none;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: -5px;
+        background: $bg-contact-form;
+        color: $text-first-color;
+        font-family: Lato-Regular;
+        font-size: 13px;
+        font-weight: bold;
+        resize: none;
+        &:focus{
+          outline: $bg-about auto 2px;
+        }
+      }
+      button{
+        background: $bg-about;
+        border: none;
+        color: #d7fcf5;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14px;
+        font-family: Lato-Bold;
+        margin-top: 15px;
+        margin-right: -7px;
+        float: right;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover{
+          background: #d7fcf5;
+          color: $bg-about;
+        }
+      }
+      label{
+        font-weight: bold;
+      }
+      .error{
+        color: #FF9494;
+      }
+      .success{
+        color: $bg-about;
+      }
+
+    }
+    .getintouch-contact{
+      display: flex;
+      width: 25%;
+      margin-left: 30px;
+      flex-direction: column;
+      text-align: justify;
+      font-size: 14px;
+      p{
+        margin-top: 0;
+        line-height: 1.8;
+        strong{
+        font-family: Lato-black;
+        }
+      }
+    }
+    .getintouch-personal{
+      margin-top: 10px;
+      p{
+        margin: 0;
+        padding: 0;
+        font-family: Lato-Bold;
+      }
+      i{
+        margin-right: 10px;
+        color: $bg-about;
+      }
+    }
+  }
+}

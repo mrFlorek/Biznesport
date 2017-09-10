@@ -1,0 +1,33 @@
+@import "settings";
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+p{
+  font-family: MavenPro-Regular;
+}
+
+.container{
+  width: 1400px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+@import "navbar";
+
+@import "header";
+
+@import "main";
+
+@import "footer";
+
+@import "media";
+@import "keyframes";

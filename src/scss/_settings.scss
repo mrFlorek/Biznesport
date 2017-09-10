@@ -1,0 +1,40 @@
+$bg-first-color: #323232;
+$text-first-color: #bebebe;
+$text-second-color: #2eb398;
+$text-about-header: #d7fcf5;
+$text-about-header2: #20816d;
+$sep-header-color: #e4e9eb;
+$sep-about-color: #219d84;
+$sep-getintouch-color: #2b2b2b;
+$slider: #ddd2c5;
+$slider-active: #8b8784;
+$bg-about: #2eb398;
+$bg-contact-form: #454545;
+$bg-footer: #222222;
+
+@font-face {
+  font-family: 'Lato-regular';
+  src: url(../fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: 'Lato-bold';
+  src: url(../fonts/lato/Lato-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Lato-black';
+  src: url(../fonts/lato/Lato-Black.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'mavenpro-regular';
+  src: url(../fonts/mavenpro/MavenPro-Regular.ttf);
+}
+@font-face {
+  font-family: 'mavenpro-bold';
+  src: url(../fonts/mavenpro/MavenPro-Bold.ttf);
+}
+@font-face {
+  font-family: 'mavenpro-black';
+  src: url(../fonts/mavenpro/MavenPro-Black.ttf);
+}
